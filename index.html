@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta lang="UFT-8">
+    <title>Movie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">
+                    <center>MOVIE</center>
+                </h1>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="movie-input" class="form-control" placeholder="Movie name" aria-label="Movie name" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button id="find-movie" class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="col-lg-12">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Movie Information</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>plot</th>
+                                <th>IMPB</th>
+                                <th>Meta Score</th>
+                                <th>Rotten Tomatoes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="movie-information">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Theater Information</h3>
+            </div>
+            <div class="panel-body">
+                <div id="map">
+                    <script src="assets/javascript/mapbox.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/movie.js"></script>
+
+</body>
+
+</html>

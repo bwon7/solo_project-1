@@ -1,0 +1,31 @@
+#map {
+
+    height: 550px;
+    width: 700px;
+
+}
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width:980px){
+
+
+}
+@media only screen and (max-width:768px){
+    #masthead{
+      position: static;
+    }
+    /*body{
+        background-color: red; 
+    }*/
+    
+}
+@media only screen and (max-width:640px){
+    /*textarea {
+        height: 50px;
+      }
+    body{
+        background-color: red;
+    }*/
+}
